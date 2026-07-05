@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Bloom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #00796b; /* Color from your file */
+            color: white;
+            padding: 10px 0;
+        }
+        .sticky-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .carousel-item {
+            text-align: center;
+            background-color: #e0f2f1; /* Light teal */
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .main-menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .menu-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+        .bg-teal { background-color: #004d40; color: white; } /* From your file */
+        .bg-orange { background-color: #ff6f00; color: white; } /* From your file */
+        .bg-light-blue { background-color: #0288d1; color: white; } /* From your file */
+        .bg-green { background-color: #388e3c; color: white; } /* From your file */
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <div class="sticky-nav text-center">
+        <a href="index.html">Home</a>
+        <a href="beauty-tips.html">Beauty Tips</a>
+        <a href="seasonal-remedies.html">Seasonal Remedies</a>
+        <a href="calorie-check.html">Calorie Check</a>
+        <a href="healthy-habits.html">Healthy Habits</a>
+        <a href="about-us.html">About Us</a>
+        <a href="bmi-calculator.html">BMI Calculator</a>
+    </div>
+
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h3>Calorie Calculator</h3>
+                <p>Track your daily calorie intake easily.</p>
+                <a href="calorie-check.html" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="carousel-item">
+                <h3>BMI Calculator</h3>
+                <p>Check your Body Mass Index for a healthier you.</p>
+                <a href="bmi-calculator.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Menu Section -->
+    <div class="container mt-4">
+        <div class="main-menu">
+            <a href="beauty-tips.html" class="menu-card bg-teal">Beauty Tips</a>
+            <a href="seasonal-remedies.html" class="menu-card bg-orange">Seasonal Remedies</a>
+            <a href="calorie-check.html" class="menu-card bg-light-blue">Calorie Check</a>
+            <a href="healthy-habits.html" class="menu-card bg-green">Healthy Habits</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
